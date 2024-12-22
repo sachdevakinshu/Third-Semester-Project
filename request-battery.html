@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Request Battery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Energize Battery</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="batteries.html">Batteries</a></li>
+                <li><a href="request-battery.html">Request Battery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Request a Battery</h2>
+            <form action="submit_request.html" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="battery-model">Do you know the model of your battery?</label>
+                <select id="battery-model" name="battery-model">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit">Send Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@energizebattery.com | Phone: +91 98765 43210</p>
+    </footer>
+
+</body>
+</html>

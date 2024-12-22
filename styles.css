@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Black background */
+    color: #ff8800; /* Orange text */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c; /* Dark background for header */
+    padding: 15px 20px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: #ff8800; /* Orange color for logo */
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ff8800; /* Orange color for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.icons a {
+    color: #ff8800; /* Orange for icons */
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('your-image-path.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #ff8800; /* Orange text */
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ff8800; /* Orange button */
+    color: #121212; /* Black text for button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Battery Replacement Section */
+.battery-replacement {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    background-color: #1c1c1c; /* Dark background */
+}
+
+.battery-replacement h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ff8800; /* Orange color for heading */
+}
+
+.battery-replacement p {
+    margin-bottom: 20px;
+    color: #dddddd; /* Light grey for paragraph text */
+}
+
+.buttons .button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.button.secondary {
+    background-color: #666; /* Keep the same secondary button color */
+}
+
+/* FAQ Section */
+.faq {
+    padding: 40px 20px;
+    background-color: #2a2a2a; /* Darker grey for background */
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ff8800; /* Orange for FAQ heading */
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Darker border */
+    padding: 10px 0;
+}
+
+.faq-item h3 {
+    font-size: 1em;
+    cursor: pointer;
+    color: #ff8800; /* Orange color for FAQ item heading */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item p {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #dddddd; /* Light grey text */
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c; /* Dark background for footer */
+    color: #ff8800; /* Orange for footer text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #ff8800; /* Orange for footer headings */
+}
+
+.footer-content div {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-content a {
+    color: #ff8800; /* Orange for footer links */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    font-size: 0.9em;
+    border-top: 1px solid #666; /* Keep the same border color */
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #ff8800; /* Orange for social media links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FAQ Toggle Script */
+.faq-item h3::after {
+    content: '+';
+    font-weight: bold;
+}
+
+.faq-item.active h3::after {
+    content: '-';
+}
+
+.faq-item.active p {
+    display: block;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    color: #fff; /* Change icon color to white */
+    margin-left: 15px; /* Space between icons */
+    font-size: 1.5em; /* Size of the icons */
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #ffa500; /* Change color on hover to orange */
+}

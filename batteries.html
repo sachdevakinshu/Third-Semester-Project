@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Batteries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        a {
+            color: #ff8800; /* Orange links */
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #d3d3d3; /* Light grey on hover */
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            background-color: #1c1c1c; /* Dark grey background */
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff8800; /* Orange color for the brand */
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        /* Container for Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #222; /* Darker grey for card background */
+            margin: 15px; /* Space between cards */
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .card h3, .card p {
+            margin: 0 0 10px 0;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        footer p {
+            color: #d3d3d3;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="brand-name">Energize Battery</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Batteries</a>
+        <a href="#">Car Battery</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/IZ/OM/WG/1208423/amaze-tub-1-1000x1000.jpg" alt="Battery 1">
+        <h3>Model 1</h3>
+        <p>₹5,800</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/452973915/QB/UK/HK/52850013/automotive-starter-battery-1000x1000.jpg" alt="Battery 2">
+        <h3>Model 2</h3>
+        <p>₹7,300</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/322709106/QB/AC/HK/1814363/inverlast-iltt-18000n-150ah-tubular-battery-1000x1000.jpg" alt="Battery 3">
+        <h3>Model 3</h3>
+        <p>₹6,500</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/HO/OC/MJ/SELLER-3400817/legend-1000x1000.jpg" alt="Battery 4">
+        <h3>Model 4</h3>
+        <p>₹8,200</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/VX/XP/PH/28519855/industrial-tubular-batteries-1000x1000.jpg" alt="Battery 5">
+        <h3>Model 5</h3>
+        <p>₹9,000</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/KT/PJ/EN/43776195/amaron-automotive-battery.jpg" alt="Battery 6">
+        <h3>Model 6</h3>
+        <p>₹10,500</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/5/XY/NK/ZW/94352660/exide-eezy-ey700l-battery-1000x1000.png" alt="Battery 7">
+        <h3>Model 7</h3>
+        <p>₹11,800</p>
+    </div>
+    <div class="card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/IZ/OM/WG/1208423/amaze-tub-1-1000x1000.jpg" alt="Battery 8">
+        <h3>Model 8</h3>
+        <p>₹13,200</p>
+    </div>
+    <!-- Add more cards as needed -->
+</div>
+
+<footer>
+    <p>Contact: info@energizebattery.com | Phone: +91 98765 43210</p>
+</footer>
+
+</body>
+</html>
